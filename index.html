@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Viewer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Interactive Document Viewer</h1>
+        <input type="file" id="fileInput" accept=".pdf, .docx, .txt" />
+      </header>
+      <main>
+        <div id="documentContainer">
+          <p id="text">Upload a file to get started.</p>
+        </div>
+      </main>
+      <footer>
+        <div id="wordBox">
+          <p id="word">Word: (Click on a word)</p>
+          <p id="definition">Meaning: -</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <!-- <script src="https://mozilla.github.io/pdf.js/web/viewer.html"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
